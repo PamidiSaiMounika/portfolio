@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uicons/1.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="new.css">
+
+    <title>Portfolio | Sai</title>
+    <!-- --------- FAVICON ---------- -->
+    <link rel="icon" href="s.png" type="image/x-icon">
+</head>
+
+
+
+    <body onload="startLoader()">
+        <div id="loader">
+            <h1 id="firstText" class="loader-text"> Portfolio </h1>
+            <h1 id="fullName" class="loader-text" style="display: none;"></h1>
+        </div>
+        <div id="content" style="display: none;">
+            <!-- Your Portfolio Website Content Here -->
+        </div>
+   
+    
+
+
+
+
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Sai Mounika</p>
+            <span>&#128187; </span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+
+               
+
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle">&#9776;</button>
+    </nav>
+
+    
+
+    <!-- Overlay for menu -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- -------------- FEATURED BOX ---------------- -->
+    <section class="featured-box" id="home">
+        <div class="featured-image">
+            <div class="image">
+                <img src="profile.jpg" alt="avatar">
+                
+            </div>
+        </div>
+        <div class="featured-text">
+            <div class="featured-text-card">
+                <span ></span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Passionate about frontend, backend and database management.
+                     Focused on building scalable solutions and growing in collaborative environments.</p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn" onclick="window.location.href='pamidisaimounika.pdf'">
+                    View Resume <i class="uil uil-file-alt"></i>
+                </button>
+            </div>
+            <div class="social_icons">
+                <a href="https://www.linkedin.com/in/sai-mounika-reddy-pamidi-74b793274" class="icon" title="Visit Prasad's LinkedIn Profile" target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+
+                <a href="mailto:saimounikareddypamidi@gmail.com" class="icon" title="Email">
+                    <i class="uil uil-envelope"></i>
+                </a>
+                
+                <script>
+                    document.querySelector(".icon[title='Email']").addEventListener("click", function(event) {
+                        event.preventDefault(); // Prevent default behavior
+                
+                        let mailtoLink = "mailto:saimounikareddypamidi@gmail.com";
+                        window.location.href = mailtoLink; // Open email client
+                    });
+                </script>
+
+               
+                <a href="https://github.com/PamidiSaiMounika" class="icon" title="GitHub" target="_blank">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------- ABOUT BOX ---------------- -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="top-header">
+                <h1 style= color:#ffd700;>About Me</h1>
+            </div>
+            <div class="about-info">
+                <h3>My introduction</h3>
+                <p>
+                    I am Pamidi Sai Mounika from Sri Satya Sai District, Andhra Pradesh, with a B.Tech in Electronics and Communication Engineering. As a fresher, I am eager to start my career in technology. With a strong programming background, I enjoy solving complex problems and contributing to innovation.  
+                
+                    I am looking for a challenging software role where I can apply my technical skills, learn emerging technologies, and collaborate with dynamic teams to build impactful solutions.
+                </p>
+                
+                <div class="about-btn">
+                    <button class="btn" onclick="window.location.href='pamidisaimounika.pdf'">
+                        View Resume <i class="uil uil-file-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Education Section (Centered with Unique Design) -->
+<section class="education-section" id="education">
+    <div class="education-wrapper">
+        <div class="top-header">
+            <h1 style="color:#ffcc00; text-align: center;">My Academic Journey</h1>
+        </div>
+        <div class="education-timeline">
+            <div class="edu-card" data-aos="zoom-in">
+                <div class="edu-circle"></div>
+                <div class="edu-content">
+                    <h3>B.Tech (ECE)</h3>
+                    <p class="edu-place"><span class="highlight-place">Gates Institute of Technology</span>, Gooty, Andhra Pradesh</p>
+                    <p class="edu-years">2020 – 2024</p>
+                    <p class="edu-score">Score: <span class="highlight-score">74.56%</span></p>
+                </div>
+            </div>
+            <div class="edu-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="edu-circle"></div>
+                <div class="edu-content">
+                    <h3>Intermediate (MPC)</h3>
+                    <p class="edu-place"><span class="highlight-place">SLN Junior College for Girls</span>, Anantapur, Andhra Pradesh</p>
+                    <p class="edu-years">2018 – 2020</p>
+                    <p class="edu-score">Score: <span class="highlight-score">83.50%</span></p>
+                </div>
+            </div>
+            <div class="edu-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="edu-circle"></div>
+                <div class="edu-content">
+                    <h3>Matriculation (10th Grade)</h3>
+                    <p class="edu-place"><span class="highlight-place">Sri Sai E.M. High School</span>, Mudigubba, Andhra Pradesh</p>
+                    <p class="edu-years">2017 – 2018</p>
+                    <p class="edu-score">Score: <span class="highlight-score">87.40%</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- -------------- SKILLS SECTION ---------------- -->
+<section class="skills-section" id="skills">
+    <div class="skills-content">
+        <h1 class="skills-title">Skills</h1>
+        <div class="skills-container">
+            <div class="skill-item" data-aos="fade-up">
+                <span>HTML</span>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                <span>CSS</span>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                <span>Python</span>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                <span>MySQL</span>
+            </div>
+
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                <span>GitHub</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+</script>
+
+
+<!-- -------------- PROJECTS SECTION ---------------- -->
+<section class="projects-section" id="projects">
+    <div class="projects-content">
+        <h1 class="projects-title">Projects</h1>
+        <div class="projects-container">
+            <!-- Major Project -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-header">
+                    <h3>NLP Fraud Detection</h3>
+                    <span class="project-type">Major Project</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Skills:</strong> Python, Machine Learning, NLP, Random Forest, SVM, KNN</p>
+                    <ul>
+                        <li>Used the EMSCAD dataset to detect fraudulent job postings in online recruitment.</li>
+                        <li>Developed an NLP-based model with Random Forest, SVM, and KNN for classification.</li>
+                        <li>Addressed the risks of fake job advertisements using machine learning techniques.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <!-- Mini Project -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="project-header">
+                    <h3>E-commerce Website</h3>
+                    <span class="project-type">Mini Project</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Skills:</strong> HTML, CSS</p>
+                    <ul>
+                        <li>Designed a responsive product catalog layout with HTML, enhancing user navigation.</li>
+                        <li>Styled the interface with CSS to create an intuitive and visually appealing shopping experience.</li>
+                        <li>Implemented cross-browser compatibility, ensuring consistent performance across devices.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!----------------------- Contact Page --------------- -->
+<section class="contact-section" id="contact">
+    <div class="contact-wrapper">
+        <h1 class="contact-title">Let’s Connect</h1>
+        <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Your Email</label>
+                    <span class="input-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder=" " required>
+                    <label for="subject">Subject</label>
+                    <span class="input-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="input-border"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Now</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent page reload
+
+        let subject = document.getElementById("subject").value;
+        let userMessage = document.getElementById("message").value;
+
+        // Encode message to handle spaces and special characters
+        let encodedMessage = encodeURIComponent(userMessage);
+        let encodedSubject = encodeURIComponent(subject);
+
+        // Mailto link with pre-filled details
+        let mailtoLink = `mailto:saimounikareddypamidi@gmail.com?subject=${encodedSubject}&body=${encodedMessage}`;
+
+        // Open default email client
+        window.location.href = mailtoLink;
+    });
+</script>
+
+    <!-- --------------- FOOTER --------------- -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Pamidi Sai Mounika</h2>
+                <ul class="footer-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <h3>Connect with Me</h3>
+                <div class="footer-social-icons">
+                    <a href="https://www.linkedin.com/in/sai-mounika-reddy-pamidi-74b793274" class="icon" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="mailto:saimounikareddypamidi@gmail.com" class="icon">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                   
+                    <a href="https://github.com/PamidiSaiMounika" class="icon" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-divider"></div>
+    
+        <div class="bottom-footer">
+            <p>&copy; <a href="#home">Sai</a> - All rights reserved</p>
+        </div>
+    </footer>
+    
+    
+
+
+
+
+
+
+    <script src="animation.js"></script>
+
+</body>
+
+</html>
