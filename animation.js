@@ -39,7 +39,7 @@ function startLoader() {
 document.addEventListener("DOMContentLoaded", function () {
     const typedTextSpan = document.querySelector(".typedText");
     const textArray = ["Backend Developer", "Frontend Developer"];
-    const colors = ["indigo", "#5fc9f3", "#9ba6a5"]; // Text colors
+    const colors = ["#2e79ba", "#5fc9f3", "#9ba6a5"]; // Text colors
     let textArrayIndex = 0;
     let charIndex = 0;
     let typingForward = true;
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Change color of featured text card
     function changeColor() {
-        const colors = ["brown", "brown", "brown"];
+        const colors = ["indigo", "indigo", "indigo"];
         let colorIndex = 0;
         setInterval(() => {
             textCardSpan.parentElement.style.color = colors[colorIndex];
